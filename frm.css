@@ -1,0 +1,50 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color:powderblue;
+    outline: none;
+    font-family: sans-serif;
+} /*universal selector, is used to select all items in an HTML file*/
+
+.heading{
+    text-align: center;
+}
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    margin-top: 10px;
+    
+}
+/*adding more style to submit element*/
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-left: 250px;
+}
+/* To group CSS selectors in a style sheet, use commas to separate multiple grouped selectors in the style */
+ input[type=password],input[type=text],input[type=email]{
+    background-color:white;
+    margin-left: 400px;
+    min-width: 400px;
+    min-height: 50px;
+    font-size: 20px;
+    text-align: center;
+ }
+ /*Child combinator combines selectors with a greater than symbol >*/
+.container>form>label{
+    font-style: italic;
+    font-size: 28px;
+    color:darkblue;
+    margin-left: 250px;
+    
+}
